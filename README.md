@@ -23,13 +23,13 @@ Q:Which animal is on the Mexican flag?
 
 A: Eagle, Turtle, Shark,
 
-Correct: "Correct! The Mexican flag depicts an Eagle grasping a snake!- Trivia fact"
+Correct: "Correct! The Mexican flag depicts an Eagle grasping a snake! + Trivia fact"
 
 **List of Technologies used:**
 
-HTML
-CSS
-JavaScript
+HTML,
+CSS,
+JavaScript, 
 
 **Install Instructions:**
 

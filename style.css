@@ -1,0 +1,40 @@
+body {
+    background-color:lightslategray;
+    text-align: center;
+}
+
+header {
+    border:black 5px dotted;
+    height: 100px;
+    font-size: 50px;
+}
+
+.containerQuestions {
+    margin: 30px;
+    padding: 30px;
+  
+}
+
+.question {
+    border:black 5px dotted;
+    font-size: 25px
+}
+.answers {
+    border: black 5px dotted;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.answers li {
+    border: black 5px dotted;
+    height: 150px;
+    list-style: none;
+    margin: 10px;
+}
+footer {
+    margin:15px;
+    padding: 15px;
+    border: black 5px dotted;
+    height: 50px;
+}
