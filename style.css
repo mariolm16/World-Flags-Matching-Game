@@ -1,4 +1,5 @@
 body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color:lightslategray;
     text-align: center;
     height:100%;
@@ -24,7 +25,6 @@ header {
     background-color: cornflowerblue;
     font-size: 35px;
     margin:15px;
-
 }
 .answers ul {
     border: black 5px dotted;
@@ -38,12 +38,10 @@ header {
     flex-wrap: wrap;
 }
 
-.answers li {
+.cards {
     border: black 5px dotted;
     height: 200px;
     width: 325px;
     list-style: none;
     margin: 5px;
-    
-
 }
