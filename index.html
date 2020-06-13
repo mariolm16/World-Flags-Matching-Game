@@ -4,61 +4,128 @@
     <link rel="stylesheet" href="style.css"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario's Trivia Adventure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <title>Mario's Map Game</title>
 </head>
 <body>
+
     <header> 
-        Welcome to the world of Trivia!
+        Welcome to the Wonderful World of Flags!
     </header>
-<!--This section will hold the questions player is asked --->
-    <div class="question">
-        <p>Which animal is featured on the Mexican flag?</p>
-    </div>
-    <!--This will hold out Q and A's-->
-    <div class="topcontainer">   
 
-            <div class ="mainContainer">
-            
-            <div class="thecard">
-            
-            <div class="thefront">Front of card</div>
-            
-            <div class="theback">Back of card
-                <img src="pictures/imp-aguila.jpg" height=200px" length="350px"> 
-
-            </div>  
-            
+        <div class="topBar">
+        <!--This Div will include our player instructions-->    
+            <div class="instructions">
+                <ul>Hello and welcome to my game:
+                  <li>The objective is simple: click on cards until you match each pair.
+                    <li> Can you beat the clock? </li>
+                    <li> Don't try to memorize the card locations (They randomize between games!)</li> 
+                    <li> To begin, simply hit <b>START</b></li>  
+                </ul>
             </div>
+
+        <!--This div holds our clock--->    
+            <div class="clock">
+                <button onClick="clock()"> START </button>
+                <button onClick="clearInterval(timer)"> STOP </button> 
+                <button onClick="refresh()"> RESTART</button>
+                <p id="countdown">45</p>
+            </div>
+            <!--Score tracker-->
+            <div class="scoreTracker"> 
+                SCORE     
+                <p id="cardScore"> 0 </p>
+            </div> 
         </div>
-            
-        <div class ="mainContainer">
-            
-            <div class="thecard">
-                
-            <div class="thefront">Front of card</div>
-                
-            <div class="theback">Back of card
-                <img src="pictures/turtle.jpg" height="200px" length="350px">
+ 
+    <!--This Div is our gameboard -->
+    <section class="gameBoard">
 
-            </div>    
-                
-            </div>
-        </div> 
+        <!--Each div represents a card with a back and front image-->
+        <div class ="card" data-framework="afghan">
+            <img class ="cardFront" src="pics/afghan.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
             
-        <div class ="mainContainer">
-            
-            <div class="thecard">
-                
-            <div class="thefront">Front of card</div>
-            
-            <div class="theback">Back of card
-                <img src="pictures/shark1.jpg" height="200px" length="250px">
-            </div>  
-                
-            </div>
         </div>
-            
-                
-    </div>
+
+        <div class ="card" data-framework="afghan">
+            <img class ="cardFront" src="pics/afghan.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+
+        <div class ="card" data-framework="malta">
+            <img class ="cardFront" src="pics/Malta.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+
+        <div class ="card" data-framework="malta">
+            <img class ="cardFront" src="pics/Malta.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+        
+        <div class ="card" data-framework="cyrpus">
+            <img class ="cardFront" src="pics/Cyprus.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+
+        <div class ="card" data-framework="cyrpus">
+            <img class ="cardFront" src="pics/Cyprus.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+
+        <div class ="card" data-framework="eswatini">
+            <img class ="cardFront" src="pics/Eswatini.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+
+        <div class ="card" data-framework="eswatini">
+            <img class ="cardFront" src="pics/Eswatini.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+
+        <div class ="card" data-framework="vatican">
+            <img class ="cardFront" src="pics/vatican.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+
+        <div class ="card" data-framework="vatican">
+            <img class ="cardFront" src="pics/vatican.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+        <div class ="card" data-framework="usa">
+            <img class ="cardFront" src="pics/usa.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+
+        <div class ="card" data-framework="usa">
+            <img class ="cardFront" src="pics/usa.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+
+        <div class ="card" data-framework="japan">
+            <img class ="cardFront" src="pics/Japan.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+
+        <div class ="card" data-framework="japan">
+            <img class ="cardFront" src="pics/Japan.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+
+        <div class ="card" data-framework="turkmenistan">
+            <img class ="cardFront" src="pics/Turkmenistan.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+
+        <div class ="card" data-framework="turkmenistan">
+            <img class ="cardFront" src="pics/Turkmenistan.png" />
+            <img class="cardBack" src="pics/unflag.jpg" />
+        </div>
+    
+    </section>
+    
 </body>
+
+<script rel="scripts" src="scripts.js" ></script>
+
 </html>

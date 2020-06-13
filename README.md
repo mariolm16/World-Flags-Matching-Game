@@ -1,47 +1,28 @@
-"# firstgame" 
-**Description:**
+# Flash-Card-Game-CFG
 
-This is my first project for the CFG program. It will put my knowledge to the test while allowing me
-to present that information creatively. 
+This is my first project for the CFG program. It will put my knowledge to the test while allowing me to present that information creatively.
 
-The objective of my game is for the player to answer trivia questions revolving around global cultures/foods.
-I am starting with 3 different questons in order to build my framework and add on to there
+This game is a simple matching games, using world flags as the cards. The player will click on two flags at a time until a match is found and will continue until the timer runs out. 
 
-Each individual question will have 3 options for the player to choose from.
-    -If the player answers correctly, a success pop-up will notify the player and give a brief description.
-    -If the player chooses incorectly, a pop-up will notify them of the correct answer.
-The question will continue to the next one regardless of answer. 
-The correct total will be added and display on the end screen.
+Features:
 
-**Brief Example:**
+Score tracker, that keeps track of cards that are matched.
+Start/Stop buttons, that allow player to begin when ready and stop the timer if complete before the timer runs out. 
+Restart button, refreshes the page. 
+Player cannot begin flipping cards before timer is started.
+Player cannnot click on more than two cards at a time to prevent cheating. 
+Card locations are randomized between games.
+Easily scaleable - Timer can be adjusted and number of cards can easily be changed.
 
-_Will_add_working_example_once_ready_
+List of Technologies used:
 
-Text Example:
+HTML, 
+CSS, 
+JavaScript,
 
-Q:Which animal is on the Mexican flag?
+Flag icons downloaded from "https://www.countries-ofthe-world.com/flags-of-the-world.html"
 
-A: Eagle, Turtle, Shark,
-
-Correct: "Correct! The Mexican flag depicts an Eagle grasping a snake! + Trivia fact"
-
-**List of Technologies used:**
-
-HTML,
-CSS,
-JavaScript, 
-
-**Install Instructions:**
+Install Instructions:
 
 The game will be accessed through an internet browser
-
-
-**Stretch Goals/ Additional Ideas**
-
-The answer for each question will be on a card, with a picture for each option, as opposed to
-plain text. I will include text for user accessability
-Cards will flip in order to inform player of correct/incorrect choice.
-Beginning with 3 questions/answers but want to complete at least 10 for presentation. 
-
-
 
